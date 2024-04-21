@@ -1,0 +1,84 @@
+/* -------------------------------------- left section ----------------------------------------- */
+
+.profile-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.user-details {
+    display: flex;
+}
+
+.globalproject-left {
+    border-right: 2px solid black;
+    width: 18vw;
+}
+
+.globaldetail-left {
+    min-height: 100%;
+    padding: 20px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+.modal-project-love img{
+    width: 25px;
+    height: 25px;
+}
+.modal-project-comment img{
+    width: 25px;
+    height: 25px;
+}
+
+.modal-favourite-details img{
+    width: 25px;
+    height: 25px;
+}
+.modal-project-link img{
+    width: 25px;
+    height: 25px;
+}
+.modal-post-commment-avatar img{
+    width: 25px;
+    height: 25px;
+}
+.modal-comment-user-avatar img{
+    width: 25px;
+    height: 25px;
+}
+.modal-comment-project-love img{
+    width: 25px;
+    height: 25px;
+}
+.modal-project-comment img{
+    width: 25px;
+    height: 25px;
+}
+.modal-favourite-details img{
+    width: 25px;
+    height: 25px;
+}
+.modal-suggestion-project-img img{
+    width: 25px;
+    height: 25px;
+}
+.viewall-image img{
+    width: 25px;
+    height: 25px;
+}
+/* -------------------------------------- right section ----------------------------------------- */
+
+.globalproject-right {
+    flex: 1;
+}
+
+.globaldetail-right {
+    padding: 20px;
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+.globaldetail-right::-webkit-scrollbar {
+    display: none;
+}

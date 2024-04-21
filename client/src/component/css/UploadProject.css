@@ -1,0 +1,12 @@
+.body {
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Global-Sec-Container,
+.User-Sec-Container {
+    min-height: 90vh;
+}

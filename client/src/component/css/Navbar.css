@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;700;900&display=swap");
+
+/* title heading change */
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 4rem);
+}
+
+.title-wrapper {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.bitbox-title {
+  color: #fff;
+  font-size: clamp(1rem, 6vw, 4rem);
+  font-size: clamp(0.8rem, 4vw, 3rem);
+  font-family: "Exo 2", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.bitbox-title span {
+  position: relative;
+  display: inline-block;
+}
+
+.bitbox-title span:before,
+.bitbox-title span:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  width: 80%;
+  color: #4af7ff;
+  animation: glitch-animation 2s infinite linear alternate-reverse;
+}
+
+.bitbox-title span:before {
+  left: 2px;
+  text-shadow: -2px 0 #165bfb;
+}
+
+.bitbox-title span:after {
+  left: -2px;
+  text-shadow: 2px 0 #165bfb;
+}
+
+.bitbox-title span:nth-child(1),
+.bitbox-title span:nth-child(4) {
+  text-transform: uppercase;
+}
+
+.bitbox-title span:nth-child(2),
+.bitbox-title span:nth-child(3),
+.bitbox-title span:nth-child(5),
+.bitbox-title span:nth-child(6) {
+  text-transform: lowercase;
+}
+
+@keyframes glitch-animation {
+  0% {
+    transform: translate(0);
+  }
+
+  25% {
+    transform: translate(2px, -2px);
+  }
+
+  50% {
+    transform: translate(-2px, 2px);
+  }
+
+  75% {
+    transform: translate(2px, 0);
+  }
+
+  100% {
+    transform: translate(-2px, -2px);
+  }
+}
+
+/* navbaar css start */
+#navbar {
+  overflow: initial;
+  z-index: 1000;
+  min-height: 10vh;
+}
+
+.logoTitle {
+  font-family: 'medium';
+  font-weight: lighter;
+}
+
+.mx-3 {
+  border-radius: 50%;
+}
+
+#navbar ul li {
+  margin-bottom: 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  position: absolute;
+  min-width: 9rem;
+  left: -50px;
+  text-align: center;
+}
+
+.profile-img img {
+  width: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: 2px solid black;
+  background: white;
+}
+
+.uploadPro {
+  border: 1px solid black;
+  color: white;
+  border-radius: 5px;
+}
+
+.uploadPro:hover {
+  color: black;
+}
+
+.Navbar-Btn-Group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -1.5rem;
+}
+
+.Navbar-Btn-Group a {
+  text-decoration: none;
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Dark Mode Toggle Button */
+.darkThemeBtn * {
+  transition: all 0.3s;
+}
+
+.darkThemeBtn input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.darkThemeBtn label {
+  border: 1px solid blue;
+  background: #cbdcf9;
+  border-radius: 10px;
+  height: 50px;
+  width: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.darkThemeBtn label:active {
+  border-radius: 5px;
+}
+
+.darkThemeBtn label svg {
+  position: absolute;
+  width: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  fill: white;
+}
+
+.darkThemeBtn label svg.sun {
+  width: 20px;
+  opacity: 1;
+  fill: blue;
+}
+
+.darkThemeBtn label svg.moon {
+  opacity: 0;
+}
+
+.darkThemeBtn input:checked+label {
+  border: 1px solid white;
+  background: #212529;
+}
+
+.darkThemeBtn input:checked+label svg.sun {
+  opacity: 0;
+}
+
+.darkThemeBtn input:checked+label svg.moon {
+  opacity: 1;
+}
+
+.darkThemeBtn input:not(:checked)+label svg.sun {
+  opacity: 1;
+}
+
+.darkThemeBtn input:not(:checked)+label svg.moon {
+  opacity: 0;
+}
+
+.darkThemeBtn input:checked~span {
+  background-color: #16174b;
+}
+
+/* .......................... */
+
+.title-wrapper {
+  display: grid;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+
+.bitbox-title {
+  color: #fff;
+  font-size: clamp(3rem, 10vw, 6rem);
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.bitbox-title span {
+  position: relative;
+  display: inline-block;
+}
+
+.bitbox-title span:before,
+.bitbox-title span:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  color: #4af7ff;
+  animation: glitch-animation 2s infinite linear alternate-reverse;
+}
+
+.bitbox-title span:before {
+  left: 2px;
+  text-shadow: -2px 0 #165bfb;
+}
+
+.bitbox-title span:after {
+  left: -2px;
+  text-shadow: 2px 0 #165bfb;
+}
+
+.bitbox-title span:nth-child(1),
+.bitbox-title span:nth-child(4) {
+  text-transform: uppercase;
+}
+
+.bitbox-title span:nth-child(2),
+.bitbox-title span:nth-child(3),
+.bitbox-title span:nth-child(5),
+.bitbox-title span:nth-child(6) {
+  text-transform: lowercase;
+}
+
+@keyframes glitch-animation {
+  0% {
+    transform: translate(0);
+  }
+
+  25% {
+    transform: translate(2px, -2px);
+  }
+
+  50% {
+    transform: translate(-2px, 2px);
+  }
+
+  75% {
+    transform: translate(2px, 0);
+  }
+
+  100% {
+    transform: translate(-2px, -2px);
+  }
+}
+
+/* Upload Project */
+.modal-backdrop {
+  --bs-backdrop-zindex: 0;
+}

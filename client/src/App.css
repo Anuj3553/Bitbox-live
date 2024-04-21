@@ -1,0 +1,58 @@
+@font-face {
+    font-family: medium;
+    src: url("./assets/fonts/medium.otf") format("opentype");
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #6366F1;
+    --accent-color: #3f83f8;
+    --text-color: #333333;
+    --link-color: #2563eb;
+    --background-color: #ffffff;
+    --light-gray: #f0f0f0;
+    --gray: #808080;
+    --dark-gray: #555;
+}
+
+#root {
+    overflow: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Exo 2", sans-serif;
+}
+
+.row {
+    margin: 0 !important;
+}
+
+.Heading-Page {
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+
+.content {
+    margin-bottom: 11.1vh;
+}
+
+.alert-container {
+    z-index: 10000;
+    position: fixed;
+    top: 13%;
+    left: 40%;
+}
+
+.alert-bar {
+    width: max-content;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}

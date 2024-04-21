@@ -1,0 +1,47 @@
+/* -------------------------------------- left section ----------------------------------------- */
+
+.profile-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userprofile-left {
+  border-right: 2px solid black;
+  width: 18vw;
+}
+
+.user-details {
+  display: flex;
+}
+
+.profile-picture img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  outline: 2px solid black;
+  background: white;
+}
+
+.userdetail-left {
+  min-height: 100%;
+  padding: 20px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* -------------------------------------- right section ----------------------------------------- */
+
+.userproject-right {
+  flex: 1;
+}
+
+.userdetail-right {
+  padding: 20px;
+  height: 90vh;
+  overflow-y: scroll;
+}
+
+.userdetail-right::-webkit-scrollbar {
+  display: none;
+}

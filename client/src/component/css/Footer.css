@@ -1,0 +1,101 @@
+/* Footer Section */
+
+.footer-about {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    width: 100vw;
+    font-weight: 500;
+}
+
+.icon {
+    size: 2rem;
+}
+
+.About_us {
+    flex: 1;
+}
+
+.new_Details,
+.Legal,
+.social {
+    flex: 0 1 20%;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.info,
+h1 {
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.code {
+    color: #3b5998;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #040404;
+}
+
+.footer-container a {
+    color: #0a0a0a;
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    color: #0d0d0e;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.copy-content {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+h4 a {
+    color: #009688;
+    text-decoration: none;
+}
+
+h4 a:hover {
+    color: #00796b;
+}
+
+.project-info {
+    width: 500px;
+}
+
+.copy-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: black;
+}
